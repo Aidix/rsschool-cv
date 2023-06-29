@@ -12,7 +12,12 @@ Start a junior JavaScript developer career in the company and in 5 years grow to
 * JavaScript   
 * Work experience with HTML/CSS   
 * C++, C# 
-* Work experience with SQL     
+* Work experience with SQL  
+
+## Code example:
+```
+
+```
 
 ## Education:
 * BSUIR, Faculty of information technologies and control, Information Technologies in Automated Systems, 2014 - 2018 years 
