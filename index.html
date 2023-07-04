@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <nav>
+        <ul class="nav">
+            <li><a href="#Contacts">Contacts</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Code">Code</a></li>
+            <li><a href="#Education">Education</a></li>
+        </ul>
+    </nav>    
+    <header>
+        <img class="left" src="img/logo.png" alt="logo">
+        <h1 class="section" id="Contacts">Yauheni Shuliakouski</h1>
+        <ul>
+            <li><strong>Phone number:</strong> +375 29 713-79-70 </li>
+            <li><strong>e-mail:</strong> zheka1609@yandex.ru </li>
+            <li><strong>Github profile:</strong> <a href="https://github.com/Aidix">Aidix</a> </li>
+            <li><strong>Nickname on the rs school discord server:</strong> Aidix </li>
+        </ul>
+    </header>
+    <main>
+        <h2 class="section" id="About">About me:</h2>
+        <p>Now I work at an enterprise not directly related to IT, however, 
+            due to the position I hold, I have to deal with site support and 
+            the output of information from various sensors to the top level. 
+            To do this, I need HTML/CSS, Javascript, sometimes C# skills, 
+            as well as database and SQL skills. Right now I'm not very good at 
+            all this, but I'm learning and hopefully in a few years I'll be good at these skills.</p>
+        <h2 class="section" id="Skills">Skills:</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Work experience with HTML/CSS</li>
+            <li>C++, C#</li>
+            <li>Work experience with SQL</li>
+        </ul>
+        <h2 class="section" id="Code">Code example:</h2>
+
+        <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);">
+            <span class="hljs-keyword" style="font-weight: 700;">var</span> strr = str.split(<span class="hljs-string" style="color: rgb(136, 0, 0);">''</span>),
+            stack = [],
+            open = [],
+            close = [],
+            openI, closeI, openII;
+      
+            <span class="hljs-keyword" style="font-weight: 700;">for</span> (<span class="hljs-keyword" style="font-weight: 700;">var</span> i=<span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>; i &lt; bracketsConfig.length; i++){
+              open.push(bracketsConfig[i][<span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>]);
+              close.push(bracketsConfig[i][<span class="hljs-number" style="color: rgb(136, 0, 0);">1</span>]);
+            }
+      
+            <span class="hljs-keyword" style="font-weight: 700;">for</span>(i=<span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>; i &lt; strr.length; i++){
+      
+              openI = open.indexOf(strr[i]);
+              closeI = close.indexOf(strr[i])
+      
+              <span class="hljs-keyword" style="font-weight: 700;">if</span>(openI !== <span class="hljs-number" style="color: rgb(136, 0, 0);">-1</span>){
+                openII = stack[stack.length<span class="hljs-number" style="color: rgb(136, 0, 0);">-1</span>];
+                <span class="hljs-keyword" style="font-weight: 700;">if</span>(openII !== closeI){
+                  stack.push(openI);
+                  <span class="hljs-keyword" style="font-weight: 700;">continue</span>;
+                }
+              }
+      
+              <span class="hljs-keyword" style="font-weight: 700;">if</span>(closeI !== <span class="hljs-number" style="color: rgb(136, 0, 0);">-1</span>){
+                openI = stack.pop();
+                <span class="hljs-keyword" style="font-weight: 700;">if</span>(closeI !== openI){
+                  <span class="hljs-keyword" style="font-weight: 700;">return</span> <span class="hljs-literal" style="color: rgb(120, 169, 96);">false</span>;
+                }
+              }
+            }
+            
+            <span class="hljs-keyword" style="font-weight: 700;">if</span>(stack.length !== <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>){
+              <span class="hljs-keyword" style="font-weight: 700;">return</span> <span class="hljs-literal" style="color: rgb(120, 169, 96);">false</span>;
+            }
+            <span class="hljs-keyword" style="font-weight: 700;">return</span> <span class="hljs-literal" style="color: rgb(120, 169, 96);">true</span>;</pre>
+
+        <h2 class="section" id="Education">Education:</h2>
+        <p>BSUIR, Faculty of information technologies and control, Information Technologies in Automated Systems, 2014 - 2018 years</p>
+        <h2>English level:</h2>
+        <p>A2(Pre-intermediate)</p>
+    </main>
+    <footer>        
+        <a class="rss" href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="Rs-school" height="50"></a>
+        <a class="git" href="https://github.com/Aidix"><img src="img/github.svg" alt="My profile" height="50"></a>
+        <p>2023</p>
+    </footer>
+    </div>
+</body>
+</html>
