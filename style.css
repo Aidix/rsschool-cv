@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Segoe UI";
+    line-height: 1.5;
+}
+
+.wrapper {
+    max-width: 1012px;
+    margin: auto;
+    border-left: 3px solid orange;
+    border-right: 3px solid orange;
+    border-bottom: 3px solid orange;
+}
+
+header{
+    height: 352px;
+    text-align: center;
+    position: relative;
+    background-color: #eee;
+}
+
+.left{
+    float: left;
+}
+
+header ul{
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    left: 40%;
+    text-align: left;
+}
+
+h1 {
+    padding-bottom: 0.3em;
+    font-size: 3em;
+    border-bottom: 1px solid #eaecef;
+    display: inline-block;
+}
+
+h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #eaecef;
+    clear: both;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+footer{
+    margin-top: 30px;
+    background-color: #eee;
+    text-align: center;
+    height: 60px;
+    position: relative;
+    border-top: 3px solid orange;
+}
+
+footer p{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px
+}
+
+.rss{
+    position: absolute;
+    left: 5%;
+    top: 5px;
+}
+
+.git{
+    position: absolute;
+    left: 95%;
+    transform: translateX(-100%);
+    top: 5px;
+}
+
+header, main, footer{
+    padding: 0 16px;
+}
+
+nav{
+    height: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%    
+
+}
+
+ul.nav{
+    margin: 0px;
+    padding: 5px;
+    list-style: none;
+    text-align: center;
+    background-color: orange;
+}
+
+.nav li { 
+    display: inline; 
+}
+
+ul.nav a {
+    display: inline-block;
+    width: 19%;
+    padding: 0;
+    background-color: #f4f4f4;
+    border: 2px solid #333;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+ul.nav a:hover{
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.section{
+    scroll-margin-top: 40px;
+}
